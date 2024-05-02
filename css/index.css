@@ -1,0 +1,124 @@
+.fullScreenContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  padding: 30;
+}
+
+.nameContainer {
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@keyframes animateName {
+  from {
+    color: black;
+  }
+  to {
+    color: rgb(103, 206, 0);
+  }
+}
+.name {
+  overflow: hidden;
+  color: rgb(103, 206, 0);
+  animation: animateName 1s, blink-caret 0.5s infinite;
+  border-right: 0.5em solid rgb(103, 206, 0);
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(103, 206, 0);
+  }
+}
+
+@keyframes animateMoreInfoIcon {
+  0% {
+    scale: 0.6;
+  }
+  50% {
+    scale: 1;
+  }
+
+  100% {
+    scale: 0.6;
+  }
+}
+.moreInfoIcon {
+  color: chartreuse;
+  animation-name: animateMoreInfoIcon;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+/* Tool Bar */
+.toolBar {
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+.toolBarContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.toolBarItemContainer {
+  margin: 4 10 4 0;
+}
+.toolBarIcon {
+  border-radius: 50%;
+  width: 100%;
+  padding: 10;
+  color: blueviolet;
+}
+.toolBarIcon:hover {
+  background-color: aliceblue;
+}
+
+/* About Me */
+.aboutMe {
+  background-color: grey;
+}
+
+/* Experience */
+.experience {
+}
+
+/* Project */
+.projects {
+  background-color: blue;
+}
+
+/* Academics */
+.academics {
+}
+
+/* Accounts */
+.socialHandles {
+}
+
+/* Contact Me */
+.contactMe {
+}
